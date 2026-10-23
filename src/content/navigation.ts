@@ -1,7 +1,7 @@
 export const navigation = [
   {
     "id": "top",
-    "label": "جلد کتاب"
+    "label": "صفحه اصلی"
   },
   {
     "id": "toc",
