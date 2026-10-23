@@ -18,3 +18,33 @@ body{font-family:'Vazirmatn',Tahoma,'Segoe UI',sans-serif;line-height:2.05;font-
 
 /* App shell refinements */
 .side nav{display:flex;flex-direction:column}.side nav a:focus-visible,.toc-grid a:focus-visible{outline:3px solid var(--teal);outline-offset:3px}.content{min-width:0}section[id]{scroll-margin-top:18px}@media(max-width:850px){section[id]{scroll-margin-top:80px}}
+
+/* Chapter-based, collapsible sidebar */
+.chapter-navigation{display:flex;flex-direction:column;gap:8px;margin-top:23px}
+.chapter-navigation .navlabel{margin:15px 4px 4px}
+.side .sidebar-home{display:flex;align-items:center;gap:10px;font-weight:600;padding:10px 13px}
+.sidebar-chapter{margin:0;padding:0;background:transparent;border:1px solid #d5e1dc;border-radius:14px;overflow:hidden}
+.sidebar-chapter[open]{background:#ffffffa8;border-color:#bcd5cd}
+.sidebar-chapter-heading{display:flex;align-items:center;gap:10px;padding:12px;list-style:none;cursor:pointer;line-height:1.3}
+.sidebar-chapter-heading::-webkit-details-marker{display:none}
+.sidebar-chapter-heading:focus-visible{outline:3px solid var(--teal);outline-offset:-3px}
+.sidebar-chapter-icon{display:grid;place-items:center;width:34px;height:34px;flex-shrink:0;background:#dcece5;color:#206b66;border-radius:10px;font:700 12px/1 Arial,sans-serif}
+.sidebar-chapter-title{display:flex;flex:1;flex-direction:column;gap:3px;min-width:0}
+.sidebar-chapter-title strong{font-size:14px}
+.side .sidebar-chapter-title small{display:block;font-size:10px;color:#667d78;line-height:1.5}
+.sidebar-chevron{font-size:22px;color:#607c77;transition:transform .2s ease}
+.sidebar-chapter[open] .sidebar-chevron{transform:rotate(180deg)}
+.sidebar-chapter-links{padding:4px 10px 12px 12px;border-top:1px solid #e4eeea}
+.side .sidebar-chapter-links a{display:block;font-size:12px;line-height:1.65;margin:2px 0;padding:7px 11px;border-radius:8px;border-right:2px solid transparent}
+.side .sidebar-chapter-links a:hover,.side .sidebar-chapter-links a:focus-visible{background:#e7f1ec;border-right-color:#248077;outline:none}
+.sidebar-coming-next{margin-top:22px;padding:15px 12px;border-top:1px solid #d5e1dc;font-size:12px;color:#55746e}
+.sidebar-coming-next span{font-weight:700}
+.sidebar-coming-next p{font-size:11px;line-height:1.9;margin:6px 0 0}
+@media(max-width:850px){
+  .side{position:relative}
+  .side h2,.side small,.side .navlabel,.side a,.side .status{display:revert}
+  .side .sidebar-chapter-title small{display:block}
+  .chapter-navigation{margin-top:10px}
+  .sidebar-coming-next{display:none}
+  section[id]{scroll-margin-top:18px}
+}
