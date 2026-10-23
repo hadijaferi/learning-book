@@ -15,7 +15,7 @@ export interface NavigationChapter {
 export const navigationChapters: readonly NavigationChapter[] = [
   {
     id: "frontend",
-    title: "Frontend Engineering",
+    title: "Frontend",
     description: "فصل ۰۱ · مبانی تا معماری پیشرفته",
     items: [
       { id: "toc", label: "فهرست مطالب فعلی" },
