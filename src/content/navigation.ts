@@ -10,14 +10,16 @@ export interface NavigationChapter {
   readonly items: readonly NavigationItem[];
 }
 
+// Chapter 01 keeps the existing React lessons and expands into other frontend disciplines.
+// Future chapters (AI, Go) will use separate navigation entries when their content is published.
 export const navigationChapters: readonly NavigationChapter[] = [
   {
-    id: "react",
-    title: "React",
-    description: "فصل ۰۱ · React Rendering",
+    id: "frontend",
+    title: "Frontend Engineering",
+    description: "فصل ۰۱ · مبانی تا معماری پیشرفته",
     items: [
-      { id: "toc", label: "فهرست مطالب" },
-      { id: "goals", label: "هدف‌های یادگیری" },
+      { id: "toc", label: "فهرست مطالب فعلی" },
+      { id: "goals", label: "هدف‌های React Rendering" },
       { id: "concept", label: "Render و Commit" },
       { id: "flow", label: "مسیر آپدیت State" },
       { id: "reconcile", label: "Reconciliation و Fiber" },
@@ -27,10 +29,19 @@ export const navigationChapters: readonly NavigationChapter[] = [
       { id: "code", label: "تمرین‌های React + TS" },
       { id: "pitfall", label: "سوءبرداشت‌های رایج" },
       { id: "interview", label: "سؤال‌های مصاحبه" },
-      { id: "glossary", label: "واژه‌نامه و منابع" },
+      { id: "glossary", label: "واژه‌نامه React و منابع" },
+      { id: "javascript", label: "JavaScript & Browser Internals" },
+      { id: "typescript", label: "Advanced TypeScript" },
+      { id: "state-management", label: "State Management & Data Fetching" },
+      { id: "nextjs", label: "Next.js Architecture" },
+      { id: "performance", label: "Performance & Virtualization" },
+      { id: "service-workers", label: "Service Workers, PWA & Offline" },
+      { id: "security", label: "Web Security & Networking" },
+      { id: "nx", label: "Nx Monorepo & Micro-frontends" },
+      { id: "docker", label: "Docker & Frontend DevOps" },
+      { id: "testing", label: "Testing & Code Quality" },
+      { id: "design-systems", label: "Design Systems & Accessibility" },
+      { id: "architecture", label: "Frontend System Design" },
     ],
   },
 ];
-
-// Future subjects can be added as chapters with their own items.
-// Do not show links for chapters that have no published content.
