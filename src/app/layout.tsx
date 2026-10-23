@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "کتاب یادگیری من | React Rendering",
-  description: "کتاب فارسی برای یادگیری عمیق فرانت‌اند، React و آمادگی مصاحبه سینیور",
+  title: "Learning Book",
+  description: "مجموعه یادداشت‌ها و آموزش‌های مهندسی نرم‌افزار، React، Go و هوش مصنوعی",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
