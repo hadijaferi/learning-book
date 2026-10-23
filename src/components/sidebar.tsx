@@ -10,7 +10,7 @@ export function Sidebar() {
       <nav aria-label="فصل‌ها">
         {navigation.map(({ id, label }) => <a key={id} href={`#${id}`}>{label}</a>)}
       </nav>
-      <div className="status">● جلسه اول: آموزش مفهومی شروع شده<br />بخش پرسش و پاسخ هنوز آغاز نشده</div>
+      <div className="status">● آموزش مفهومی React همراه با سؤال‌وجواب‌های فنی</div>
     </aside>
   );
 }
