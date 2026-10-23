@@ -1,22 +1,21 @@
-# Frontend Learning Book
+# Learning Book
 
-A Persian-first, static Next.js learning book about React rendering, engineering fundamentals and senior-level interviews.
+A Persian-first software engineering learning resource covering React, Go, AI, and other topics over time.
 
 ## Stack
 
-- Next.js App Router + React + TypeScript
+- Next.js App Router, React, and TypeScript for the website
 - Static export to GitHub Pages (no server runtime)
-- Zero runtime UI dependencies
-- Existing educational HTML preserved under `src/content/chapters.ts`; new pages use React components
+- Educational content in `src/content/chapters.ts`
 
 ## Run locally
 
 ```bash
-npm ci
+npm install
 npm run dev
 ```
 
-Visit http://localhost:3000/frontend-learning-book/ .
+Open http://localhost:3000/learning-book/.
 
 ## Quality checks
 
@@ -28,8 +27,12 @@ npm run build
 
 ## Deployment
 
-The GitHub Actions workflow builds `out/` on pushes to `main`. In **Settings → Pages**, change **Source** from **Deploy from a branch** to **GitHub Actions** after merging the feature branch. URL remains https://hadijaferi.github.io/frontend-learning-book/ .
+Pushes to `main` trigger the GitHub Actions Pages workflow, which builds and deploys `out/`.
 
-## Migration note
+Site: https://hadijaferi.github.io/learning-book/
 
-The legacy root `index.html` stays in place while the new app is reviewed. Section bodies are currently trusted static HTML from the existing book so the full technical content remains intact. Convert sections to accessible JSX/MDX components gradually, without introducing untrusted HTML. Do not connect user-generated content to `dangerouslySetInnerHTML`.
+The current content starts with React rendering, with room for Go, AI, and future engineering subjects.
+
+## Content safety
+
+Existing chapter markup is trusted static content. Migrate to JSX/MDX gradually; do not pass untrusted user content to `dangerouslySetInnerHTML`.
