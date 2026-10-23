@@ -42,6 +42,8 @@ export const navigationChapters: readonly NavigationChapter[] = [
       { id: "testing", label: "Testing & Code Quality" },
       { id: "design-systems", label: "Design Systems & Accessibility" },
       { id: "architecture", label: "Frontend System Design" },
+      { id: "vite", label: "Vite & Frontend Build Tools" },
+      { id: "vercel", label: "Vercel & Deployment" },
     ],
   },
 ];
