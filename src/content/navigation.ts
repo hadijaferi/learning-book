@@ -45,14 +45,10 @@ export const navigation = [
   },
   {
     "id": "interview",
-    "label": "۹. نقشه چالش مصاحبه"
-  },
-  {
-    "id": "audio",
-    "label": "۱۰. مرور صوتی"
+    "label": "۹. سؤال‌های مصاحبه"
   },
   {
     "id": "glossary",
-    "label": "۱۱. واژه‌نامه و منابع"
+    "label": "۱۰. واژه‌نامه و منابع"
   }
 ] as const;
