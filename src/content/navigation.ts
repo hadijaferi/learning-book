@@ -25,7 +25,6 @@ export const navigationChapters: readonly NavigationChapter[] = [
       { id: "reconcile", label: "Reconciliation و Fiber" },
       { id: "snapshot", label: "State Snapshot و Batching" },
       { id: "tree", label: "کامپوننت‌ها، memo و key" },
-      { id: "effects", label: "Effect و زمان‌بندی" },
       { id: "code", label: "تمرین‌های React + TS" },
       { id: "pitfall", label: "سوءبرداشت‌های رایج" },
       { id: "interview", label: "سؤال‌های مصاحبه" },
